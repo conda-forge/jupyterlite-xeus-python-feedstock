@@ -1,5 +1,5 @@
 {% set name = "jupyterlite-xeus-python" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0176e686088cd9e74dc8d3e3f972d6b2c87111d181483db7e6d61b8a71c4d036
+  sha256: 0aa441937d60760312bafead0966b547a40292ea62269b5d9f89e5cee50e5c34
 
 build:
   noarch: python
@@ -43,7 +43,7 @@ test:
 
 about:
   home: https://github.com/jupyterlite/xeus-python-kernel
-  summary: 'The xeus-python Python kernel for JupyterLite running in the browser'
+  summary: The xeus-python Python kernel for JupyterLite running in the browser
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
