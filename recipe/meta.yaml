@@ -1,5 +1,5 @@
 {% set name = "jupyterlite-xeus-python" %}
-{% set version = "0.9.7" %}
+{% set version = "0.9.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b306a924c95e24e8716ab64e06e998a7d47b9368421db71f256752926e21caf5
+  sha256: 7f3262803f8c58280e7ba4069337471f23ad08518fcb6ef4f3abe97a3c1a79ff
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - jupyterlite-xeus-python-build = jupyterlite_xeus_python.build:start
 
