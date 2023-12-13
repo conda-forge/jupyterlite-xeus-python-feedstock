@@ -20,10 +20,10 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - jupyter_packaging >=0.10,<2
     - jupyterlab >=3,<4
     - empack >=3.1,<4
     - hatchling
+    - hatch-nodejs-version
   run:
     - python >=3.8
     - traitlets
