@@ -23,6 +23,7 @@ requirements:
     - jupyterlab >=3,<4
     - empack >=3.1,<4
     - hatchling
+    - hatch-jupyter-builder
     - hatch-nodejs-version
   run:
     - python >=3.8
